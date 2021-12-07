@@ -14,7 +14,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <style>
+    /* This is for wire framing to see our rows/columns.
+    DON'T FORGET DEBUG CLASS ON BODY TAG */
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+  <body class="debug">
     <header>
       <div class="container-fluid bg-dark text-light">
         <div class="row">
