@@ -3,6 +3,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  background-color: teal;
+  background-image: url("https://halo.wiki.gallery/images/thumb/f/f6/H2_Lockout.jpg/1200px-H2_Lockout.jpg");
+  background-position: center;
+  background-size: cover;
+  color: yellow;
 }
 
 main {
