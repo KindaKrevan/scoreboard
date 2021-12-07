@@ -1,11 +1,18 @@
-let score1 = 0;
+const score = {
+  player1: {
+    points: 0,
+  },
+  player2: {
+    points: 0,
+  },
+};
 
-function addScore() {
-  score1++;
-  document.getElementById("points1").innerText = score;
+function addScore(player) {
+  score[player].points++;
+  document.getElementById(player).innerText = score[player].points;
 }
 
-function remScore() {
-  score1--;
-  document.getElementById("points1").innerHTML = score;
+function remScore(player) {
+  score[player].points--;
+  document.getElementById(player).innerHTML = score[player].points;
 }
